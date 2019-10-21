@@ -66,8 +66,8 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .navigation-bar {
-	border: 1px solid red;
-	margin: 2% 0;
+	/* border: 1px solid red; */
+	margin: auto 0;
 	display: flex;
 	justify-content: space-evenly;
 
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5 {
 nav {
 	display: flex;
 	justify-content: space-between;
-	border: 2px solid purple;
+	/* border: 2px solid purple; */
 	width: 45%;
 }
 
@@ -259,7 +259,8 @@ ul {
 
     .navigation-bar {
         flex-direction: column-reverse;
-        align-items: center;
+		align-items: center;
+		border: 1px solid gray;
     }
 
     .header-content {
@@ -285,8 +286,48 @@ ul {
 @media(max-width: 500px) {
     nav {
         display: flex;
-        justify-content: space-between;
-    }
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid blue;
+	}
+	
+	.navigation-bar {
+		margin: auto 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-content {
+		border: 1px solid green;
+		/* margin: auto 0; */
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+
+	.top-content {
+		flex-direction: column;
+	}
+
+	.text-content {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid pink;
+		width: 100%;
+		padding: 2% 0;
+	}
+
+	.bottom-content {
+		flex-direction: column;
+	}
+
+	.bottom-text {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 2% 0;
+	}
 }
 
 
